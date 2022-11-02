@@ -19,6 +19,5 @@ from mvt_jones_franco import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('familiares/', views.familiares),
-    re_path('', include('applications.Familiares.urls'))
+    
 ]
