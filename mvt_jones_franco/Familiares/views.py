@@ -4,9 +4,7 @@ from .models import *
 
 
 def mostar_familiares(request):
-    #madre = Padres(nombre='Marlen', apellido='Jones')
-    #saludo = f'Hola a todos esta es mi Familia {madre.nombre}'
-    
+
     abuelo = Familiar(parentesco= 'Abuelo', nombre= 'Elder', apellido= 'Jones', dni='05122682', edad='85', fecha_de_nacimiento='18-07-1936')
     madre = Familiar(parentesco= 'Madre', nombre= 'Marlen', apellido= 'Jones', dni='18665444', edad='60', fecha_de_nacimiento='25-12-1962')
     esposa = Familiar(parentesco= 'Esposa', nombre= 'Marina', apellido= 'Arenas', dni='36225644', edad='30', fecha_de_nacimiento='15-06-1992')
@@ -15,5 +13,3 @@ def mostar_familiares(request):
 
 
     return render(request, 'familiares1.html', {'objetos': [abuelo, madre, esposa, hijo1, hijo2]})
-    #return HttpResponse(saludo)
-    #return render(request, '', {'nombre': madre, 'apellido': madre})
