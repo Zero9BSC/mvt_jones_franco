@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiares</title>
+</head>
+<body>
+    <h1>Familiares de Franco</h1>
+
+        <table>
+        <tr style="background-color: rgb(163, 212, 200);">
+            <td><strong>Parentesco</strong></td>
+            <td><strong>Apellido</strong></td>
+            <td><strong>Nombre</strong></td>
+            <td><strong>DNI</strong></td>
+            <td><strong>Edad</strong></td>
+            <td><strong>Fecha de Nacimiento</strong></td>
+        </tr>
+        {% for familiares in objetos %}
+        <tr>
+            <td style="background-color: rgb(216, 216, 216);">{{familiares.parentesco}}</td>
+            <td style="background-color: rgb(216, 216, 216);">{{familiares.apellido}}</td>
+            <td style="background-color: rgb(216, 216, 216);">{{familiares.nombre}}</td>
+            <td style="background-color: rgb(216, 216, 216);">{{familiares.dni}}</td>
+            <td style="background-color: rgb(216, 216, 216);">{{familiares.edad}}</td>
+            <td style="background-color: rgb(216, 216, 216);">{{familiares.fecha_de_nacimiento}}</td>
+        </tr>        
+        {% endfor %}
+        </table>
+    
+</body>
+</html>
